@@ -5,13 +5,18 @@ import ContactForm from './components/ContactForm';
 import MainFooter from './components/MainFooter';
 import InfoSection from './components/InfoSection';
 import FeaturesGrid from './components/FeaturesGrid';
+import ClaimLandingSection from './components/ClaimLandingSection';
 
 const Home: React.FC = () => {
 	const contactRef = useRef(null);
 	const aboutRef = useRef(null);
 	const FqRef = useRef(null);
-	const scrollToSection = (ref) => {
-		ref.current.scrollIntoView({ behavior: 'smooth' });
+	interface SectionRef {
+		current: HTMLElement | null;
+	}
+
+	const scrollToSection = (ref: SectionRef): void => {
+		ref.current?.scrollIntoView({ behavior: 'smooth' });
 	};
 
 	useEffect(() => {
@@ -54,9 +59,9 @@ const Home: React.FC = () => {
 						contactRef={contactRef}
 						aboutRef={aboutRef}
 					/>
-					{/* <div className='bg-white'>
+				 <div className='bg-white'>
 						<ClaimLandingSection />
-					</div> */}
+					</div> 
 					<div className='!bg-[#eff6ff] relative'>
 						<FeaturesGrid />
 					</div>
@@ -69,9 +74,9 @@ const Home: React.FC = () => {
 					<div className='bg-white relative' ref={contactRef}>
 						<ContactForm />
 					</div>
-					{/* <div className='bg-white'>
+					<div className='bg-white'>
 						<MainFooter />
-					</div> */}
+					</div> 
 				</div>
 			</div>
 		</>

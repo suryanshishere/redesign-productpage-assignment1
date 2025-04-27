@@ -2,10 +2,12 @@ import { lazy } from 'react'
 import authRoute from './authRoute'
 import othersRoute from './othersRoute'
 import type { Routes } from '@/@types/routes'
+import sharedRoutes from './sharedRoutes'
 
-export const publicRoutes: Routes = [...authRoute]
+export const publicRoutes: Routes = [...sharedRoutes, ...authRoute]
 
 export const protectedRoutes: Routes = [
+    ...sharedRoutes,
     /** Example purpose only, please remove */
     {
         key: 'singleMenuItem',
@@ -46,12 +48,6 @@ export const protectedRoutes: Routes = [
             () => import('@/views/demo/GroupCollapseMenuItemView2'),
         ),
         authority: [],
-    },
-    {
-        key: 'homePage',
-        path: `/hello`,
-        component: lazy(() => import('@/views/Home')),
-        authority: []
     },
     ...othersRoute,
 ]
