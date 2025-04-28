@@ -72,7 +72,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
     }, [])
 
     return (
-        <div className="!bg-[#01052f] w-full relative flex flex-col py-2 md:py-5 overflow-hidden px-8">
+        <div className="!bg-slate-400 w-full relative flex flex-col py-2 md:py-5 overflow-hidden px-8">
             {/* Navbar with scroll callbacks */}
             <HomeNavbar
                 scrollToSection={scrollTo}
@@ -81,7 +81,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 aboutRef={aboutEl}
             />
            
-            <div className="min-h-[90vh] flex items-center">
+            <div className="min-h-[90vh] flex items-center mt-12 sm:mt-0">
                 {/* Background video for larger screens */}
                 {/* <video
                     autoPlay
@@ -104,7 +104,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 {/* Overlay to ensure text readability */}
                 <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-[-5]" />
 
-                <div className="relative z-10 text-white w-full flex flex-col-reverse lg:flex-row md:mt-6 lg:mt-0 lg:items-center lg:justify-center lg:gap-10 max-w-[1538px] mx-auto">
+                <div className="relative z-10 text-white w-full flex flex-col-reverse lg:flex-row md:mt-6 lg:mt-0 lg:items-center lg:justify-center lg:gap-12 max-w-[1538px] mx-auto">
                     {/* Video Section */}
                     <div className="lg:w-5/12 mt-8 lg:mt-0 lg:mb-0 mb-6">
                         <div className="relative overflow-hidden pt-[56.25%] rounded-lg shadow-lg">
@@ -145,14 +145,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                             className="text-lg my-8 font-light"
                         >
                             Create{' '}
-                            <span className="text-primary font-bold">
+                            <span className="text-[#01052f] font-bold">
                                 AI Store
                             </span>{' '}
                             in 2 min
                             <br />
                             <br />
                             Scale with{' '}
-                            <span className="font-bold text-primary">
+                            <span className="font-bold text-[#01052f]">
                                 Digital Marketing
                             </span>
                         </p>
@@ -162,7 +162,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                                 <Button
                                     block
                                     variant="solid"
-                                    className="rounded-full max-w-[300px]"
+                                    className="rounded-full max-w-[300px] bg-slate-800 hover:bg-[#01052f] outline outline-white"
                                 >
                                     Get Started
                                 </Button>
@@ -188,7 +188,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                                     ) : (
                                         0
                                     )}
-                                    <span className="text-primary ml-1">+</span>
+                                    <span className=" ml-1">+</span>
                                 </h1>
                                 <p className="text-lg capitalize">
                                     qualified doctors
@@ -208,7 +208,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                                     ) : (
                                         0
                                     )}
-                                    <span className="text-primary ml-1">+</span>
+                                    <span className=" ml-1">+</span>
                                 </h1>
                                 <p className="text-lg capitalize">hospitals</p>
                             </div>
@@ -226,7 +226,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                                     ) : (
                                         0
                                     )}
-                                    <span className="text-primary ml-1">+</span>
+                                    <span className=" ml-1">+</span>
                                 </h1>
                                 <p className="text-lg capitalize">
                                     treatment plans

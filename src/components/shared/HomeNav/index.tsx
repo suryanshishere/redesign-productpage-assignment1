@@ -147,12 +147,12 @@ const HomeNavbar: React.FC<HomeNavbarProps> = ({
 									</div>
 								</div>
 							))}
-							{
+							{/* {
 								user?.role?.[0] === 'admin' ? (
 									<div className='mt-3'>
 										<Button onClick={() => navigate('/stores')}>Go to Admin Dashboard</Button>
 									</div>
-								) : (
+								) : ( */}
 									<>
 										<div className="mt-3">
 											<Button
@@ -182,8 +182,8 @@ const HomeNavbar: React.FC<HomeNavbarProps> = ({
 											/>
 										</div>
 									</>
-								)
-							}
+								{/* )
+							} */}
 						</div>
 					</div>
 
@@ -198,21 +198,21 @@ const HomeNavbar: React.FC<HomeNavbarProps> = ({
 					{/* Desktop Menu */}
 					<div className="hidden lg:flex items-center space-x-8">
 						{/* Navigation Items */}
-						{
+						{/* {
 							user?.role?.[0] === 'admin' ? (
 								<div className='mt-3'>
 									<Button variant='solid' className='rounded-[5px]' onClick={() => navigate('/stores')}>Go to Admin Dashboard</Button>
 								</div>
-							) : (
+							) : ( */}
 								<div className="flex items-center space-x-4">
 									<Button
 										onClick={() =>
 											navigate('/store')
 										}
 										block
-										className="rounded-[5px]"
+										className="rounded-full"
 									>
-										Login
+										Login / Sign Up
 									</Button>
 
 									<HcfSignupPopup
@@ -221,7 +221,7 @@ const HomeNavbar: React.FC<HomeNavbarProps> = ({
 											<Button
 												block
 												variant="solid"
-												className="rounded-[5px]"
+												className="rounded-full bg-slate-600 hover:bg-slate-800"
 											>
 												Get Started
 											</Button>
@@ -229,8 +229,8 @@ const HomeNavbar: React.FC<HomeNavbarProps> = ({
 										hcfLogin={true}
 									/>
 								</div>
-							)
-						}
+							{/* )
+						} */}
 
 						{/* Buttons */}
 

@@ -15,13 +15,13 @@ const links: LinkItem[] = [
 
 const MainFooter: React.FC = () => {
     return (
-        <footer className=" border-gray-200 p-4">
+        <footer className="py-4 px-8">
             <div className="w-full flex flex-wrap items-center justify-between mx-auto p-2 600px:px-12">
                 {/* Copyright for all screen sizes */}
-                <h1 className="text-sm text-black md:hidden text-center w-full">
+                <h1 className="text-base text-black md:hidden text-center w-full">
                     ©{new Date().getFullYear()} gogetwell.ai
                 </h1>
-                <h1 className="text-xs text-black hidden md:block">
+                <h1 className="text-base text-black hidden md:block">
                     ©{new Date().getFullYear()} gogetwell.ai
                 </h1>
                 <ul className="mt-4 md:mt-0 flex gap-x-3 flex-wrap gap-y-3 mx-auto">

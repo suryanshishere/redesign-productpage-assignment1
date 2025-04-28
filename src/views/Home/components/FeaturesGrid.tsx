@@ -64,7 +64,7 @@ const solutions = [
 
 const FeaturesGrid: React.FC = () => {
   return (
-    <div className="py-16 px-4 md:px-8 bg-gray-50">
+    <div className="py-16 px-4 md:px-8 bg-slate-200">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">

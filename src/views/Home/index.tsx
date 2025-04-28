@@ -59,22 +59,22 @@ const Home: React.FC = () => {
 						contactRef={contactRef}
 						aboutRef={aboutRef}
 					/>
-				 <div className='bg-white'>
+				 <div className='bg-slate-300'>
 						<ClaimLandingSection />
 					</div> 
-					<div className='!bg-[#eff6ff] relative'>
+					<div className='bg-slate-200  relative'>
 						<FeaturesGrid />
 					</div>
-					<div className='!bg-white relative' ref={aboutRef}>
+					<div className='bg-slate-100 relative' ref={aboutRef}>
 						<InfoSection />
 					</div>
-					<div className='relative bg-white' ref={FqRef}>
+					<div className='relative bg-slate-50' ref={FqRef}>
 						<HomeFAQs />
 					</div>
 					<div className='bg-white relative' ref={contactRef}>
 						<ContactForm />
 					</div>
-					<div className='bg-white'>
+					<div className='bg-slate-400'>
 						<MainFooter />
 					</div> 
 				</div>
